@@ -1,0 +1,40 @@
+<!--
+=========================================================
+* Argon Dashboard 2 - v2.0.4
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+-->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    {% include '../partials/head.html' %}
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+    <div class="min-height-300 bg-primary position-absolute w-100"></div>
+
+    {% include '../partials/menu.html' %}
+
+    <main class="main-content position-relative border-radius-lg ">
+        <!-- Navbar -->
+        {% include '../partials/navbar.html' %}
+        <!-- End Navbar -->
+
+        <div class="container-fluid py-4">
+            {% block conteudo %}
+
+            {% endblock %}
+        </div>
+      </main>
+
+    {% include '../partials/fixed-plugin.html' %}
+
+    {% include '../partials/scripts.html' %}
+</body>
+</html>
